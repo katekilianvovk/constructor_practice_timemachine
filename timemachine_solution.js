@@ -25,10 +25,12 @@ timeMachine.prototype.listPassengers = function() {
 }
 
 timeMachine.prototype.nameLengths = function() {
+  //one solution
 //   return this.passengers.reduce(function(prev,curr) {
 //     return prev + curr.length;
 //   }, 0)
 //
-  this.passengers.join('').length;
+//another solution
+  return this.passengers.join('').length;
 }
 module.exports = timeMachine;
